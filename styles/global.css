@@ -55,10 +55,12 @@ table {
     --backgroud-princ: ;
     --background-product: #b1b1b180;
     --grey-1: #000;
-    --grey-2: ;
-    --colorButt-hover: ;
+    --grey-2: #b1b1b180;
+    --font-size-butt: 1rem;
+	--font-wght-butt: 700;
     --color-butt: rgb(211 89 31);
     --font-familyP: 'Inter', sans-serif;
     --grey-00: #ffffff;
+	--radios-butts: 4px;
 
 }

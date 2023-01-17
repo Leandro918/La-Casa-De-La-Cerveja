@@ -1,4 +1,4 @@
-const baseProdutos = [
+const baseProducts = [
     {
         imagem    : "./assets/img/imgProdutos/cervejas/bhamaLata.jpg",
         nome      :"Brahma lata 269ml",
@@ -130,13 +130,6 @@ const baseProdutos = [
         nome      :"Red Bull",
         valor     :"R$ 8,00",
         descricao :"250ml",
-        setor     :"energeticos"
-    },
-    {
-        imagem    : "./assets/img/imgProdutos/energeticos/redTro.jpg",
-        nome      :"Red Bull",
-        valor     :"R$ 8,00 250ml",
-        descricao :"Sabor tropical",
         setor     :"energeticos"
     },
     {
