@@ -56,7 +56,8 @@ function search(array) {
     e.preventDefault()
     const listSearch = array.filter((array)=>{
       const name = array.nome.toLocaleLowerCase()
-      return name.includes(searchValue.value)
+      const value = searchValue.value 
+      return name.includes(value.toLocaleLowerCase())
     })
     products.innerText = " "
      if (listSearch.length == 0) {
@@ -87,7 +88,8 @@ function search(array) {
 search(baseProducts)
 
  
-
+ function redirects() {
+  
  let instagram = document.querySelector("#instagram")
  instagram.addEventListener('click', (e)=>{
   e.preventDefault()
@@ -112,3 +114,6 @@ search(baseProducts)
    window.location.href = "https://github.com/Leandro918"
  })
 
+
+ }
+ redirects()
