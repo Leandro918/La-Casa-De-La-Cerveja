@@ -1,4 +1,4 @@
-const baseProducts = [
+export const baseProducts = [
     {
         imagem    : "./assets/img/imgProdutos/cervejas/bhamaLata.jpg",
         nome      :"Brahma lata 269ml",
