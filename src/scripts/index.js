@@ -74,7 +74,7 @@ function productsCart(obj) {
 }
 
 function counter() {
-  let arrayCart = JSON.parse(localStorage.getItem("products"))
+  let arrayCart = JSON.parse(localStorage.getItem("products")) || []
   let number = arrayCart.length
   numberCounter.innerText = number
    
