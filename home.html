@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/card.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
+    <script src="https://kit.fontawesome.com/2de852ba67.js" crossorigin="anonymous"></script>
+    <title>LA CASA DE LA CERVEJA</title>
+</head>
+<body>
+    <div class="container__main">
+            <header class="container__header"> 
+              <nav class="container__header--navigation">
+                <img class="container__header--img" src="./src/assets/img/logoPrincipal/logoPrincipal.jpg">
+                <button class="container__header--cart">
+                    <p class="container__header--number"></p>
+                    <i class="fa-solid fa-cart-shopping fa-shake fa-3x"></i>
+                </button>
+              </nav>
+              <h4 class="header__title">Confira nossos produtos com o melhor preço e faça seu pedido, e receba sem sair de casa ou venha até nós</h4>
+            </header>
+        
+            <form class="container__search" action="">
+                <input class="container__search--input" type="text" placeholder="O que você procura ?">
+                <button class="container__search--butt">Pesquisar</button>
+            </form>
+            
+            <section class="container__products">
+
+            </section>
+            <h1 data-text="Loading..." id ="loadingSearch"></h1>
+            <footer class="container__info">
+                <div class="container__info--box"> 
+                    <h4>Chegue até nós ou siga nas redes sociais</h4>
+                    <span>
+                        <a class="info__box--logos" href="https://www.instagram.com/la_casa_de_la_cerveja/" target="_blank">
+                            <i class="fa-brands fa-instagram fa-3x icons"></i>
+                        </a>
+                        <a class="info__box--logos" href="https://www.google.com.br/maps/place/La+Casa+De+La+Cerveja/@-25.7980966,-53.3017464,16.25z/data=!4m5!3m4!1s0x0:0x830eb009107768a8!8m2!3d-25.7975029!4d-53.3012947" target="_blank">
+                            <i class="fa-sharp fa-solid fa-map-location-dot fa-3x" id="mapsLaCasa"></i>
+                        </a>
+                    </span>
+               </div>
+                <div class="container__info--box">
+                    <h4>Este site foi criado e projetado por Leandro Da Silva</h4>
+                    <h5>Meios de contato :</h5>
+                   <span>
+                        <a class="info__box--logos" href="https://www.instagram.com/leandro_0j/" target="_blank">
+                            <i class="fa-brands fa-instagram fa-3x icons" ></i>
+                        </a>
+                         
+                        <a class="info__box--logos" href="https://www.linkedin.com/in/leandro-da-silva-b14155237/" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-3x icons" ></i>
+                        </a>
+                         
+                        <a class="info__box--logos" href="https://wa.me/5546999140120?text=Olá" target="_blank">
+                            <i class="fa-brands fa-whatsapp fa-3x icons" ></i>
+                        </a>
+                        
+                        <a class="info__box--logos" href="https://github.com/Leandro918" target="_blank">
+                            <i class="fa-brands fa-github fa-3x icons" ></i>
+                        </a>
+                   </span>
+                </div>
+            </footer>
+           <dialog></dialog>
+         <script src="./src/scripts/index.js" type="module"></script>
+        </div>
+</body>
+</html>
