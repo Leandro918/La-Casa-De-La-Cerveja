@@ -49,7 +49,7 @@ const buttReturn = document.querySelector(".box__buttReturn")
 function returnHome() {
   buttReturn.addEventListener('click', (e)=>{
     e.preventDefault()
-    window.location = "/home.html"
+    window.location = "/index.html"
   })
 }
 returnHome()
