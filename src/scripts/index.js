@@ -74,9 +74,13 @@ function productsCart(obj) {
 }
 
 function counter() {
-  let arrayCart = JSON.parse(localStorage.getItem("products")) || []
-  let number = arrayCart.length
-  numberCounter.innerText = number
+  let arrayCart = JSON.parse(localStorage.getItem("products")) | []
+  if(arrayCart.length == undefined){
+    numberCounter.innerText = 0
+  }else{
+    let number = arrayCart.length
+    numberCounter.innerText = number
+  }
    
 }
  counter()
