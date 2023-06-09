@@ -55,22 +55,28 @@ function returnHome() {
 returnHome()
 
 
-
+let arrayCart = JSON.parse(localStorage.getItem("products"))
 const productsContainer = document.querySelector(".products__cart")
 
-function addProductsCart() {
- let arrayCart = JSON.parse(localStorage.getItem("products"))
- arrayCart.forEach(element => {
-   productsContainer.appendChild(criaTemplate(element))
-   
- });
+function addProductsCart(array) {
+   if (arrayCart == 0) {
+      productsContainer.innerText = "Adicione produtos ao seu carrinho"
+   }else{
+       productsContainer.innerText = " "
+      array.forEach(element => {
+        productsContainer.appendChild(criaTemplate(element))
+        
+      });
+   }
  
 }
-addProductsCart()
+addProductsCart(arrayCart)
 
 function removeProductCart(id) {
-  let arrayCart = JSON.parse(localStorage.getItem("products"))
-  arrayCart.forEach(element =>{
-    
-  })
+  const remove = arrayCart.findIndex(e => e.id == id)
+  arrayCart.splice(remove, 1)
+
+  localStorage.setItem("products",JSON.stringify(arrayCart))
+  addProductsCart(arrayCart)
+
 }

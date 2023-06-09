@@ -48,7 +48,7 @@ function criaTemplate(array) {
     buttAddCart.addEventListener('click', (e)=>{
       e.preventDefault()
       productsCart(array)
-
+      counter()
     })
 
     headerP.addEventListener('click', (e)=>{
@@ -60,7 +60,7 @@ function criaTemplate(array) {
      
 }
 let numberCounter = document.querySelector(".container__header--number")
-let arrayCart = JSON.parse(localStorage.getItem("products"))
+let arrayCart = JSON.parse(localStorage.getItem("products")) || []
 let baseProductsCart = [] 
 baseProductsCart = arrayCart
  
@@ -70,17 +70,12 @@ function productsCart(obj) {
    localStorage.setItem("products", JSON.stringify(baseProductsCart))
    let arrayCart = JSON.parse(localStorage.getItem("products"))
    baseProductsCart = arrayCart
-     counter()
+   
 }
 
 function counter() {
-  let arrayCart = JSON.parse(localStorage.getItem("products")) | []
-  if(arrayCart.length == undefined){
-    numberCounter.innerText = 0
-  }else{
-    let number = arrayCart.length
-    numberCounter.innerText = number
-  }
+  let arrayCart = JSON.parse(localStorage.getItem("products")) || []
+  numberCounter.innerText = arrayCart.length
    
 }
  counter()
