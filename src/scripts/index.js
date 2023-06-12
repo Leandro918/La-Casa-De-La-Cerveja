@@ -160,13 +160,12 @@ function createLoadingSearch() {
 }
 
 const cartButton = document.querySelector(".container__header--cart")
- 
- function redirectCart() {
+
    cartButton.addEventListener('click', (e)=>{
      e.preventDefault()
-     window.location.href = "../../src/pages/cart.html"
+     window.location.href = "../pages/cart.html"
    })
  
- }
-redirectCart()
+ 
+
 
