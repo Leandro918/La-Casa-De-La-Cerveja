@@ -162,7 +162,7 @@ function createLoadingSearch() {
 const cartButton = document.querySelector(".container__header--cart")
    cartButton.addEventListener('click', (e)=>{
      e.preventDefault()
-     window.location.assign("../pages/cart.html")
+     window.location.assign("./pages/cart.html")
    })
  
  
