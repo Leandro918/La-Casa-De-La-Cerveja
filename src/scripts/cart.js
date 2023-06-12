@@ -45,14 +45,11 @@ function criaTemplate(array) {
 
 
 const buttReturn = document.querySelector(".box__buttReturn")
-
-function returnHome() {
   buttReturn.addEventListener('click', (e)=>{
     e.preventDefault()
     window.location = "/index.html"
   })
-}
-returnHome()
+
 
 
 let arrayCart = JSON.parse(localStorage.getItem("products"))
