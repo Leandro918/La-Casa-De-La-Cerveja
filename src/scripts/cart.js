@@ -38,9 +38,7 @@ function criaTemplate(array) {
 
   })
 
-
   return tagli
-   
 }
 
 
@@ -48,9 +46,8 @@ const buttReturn = document.querySelector(".box__buttReturn")
   buttReturn.addEventListener('click', (e)=>{
     e.preventDefault()
     window.location = "/index.html"
+
   })
-
-
 
 let arrayCart = JSON.parse(localStorage.getItem("products"))
 const productsContainer = document.querySelector(".products__cart")
@@ -63,9 +60,8 @@ function addProductsCart(array) {
       array.forEach(element => {
         productsContainer.appendChild(criaTemplate(element))
         
-      });
+      })
    }
- 
 }
 addProductsCart(arrayCart)
 
