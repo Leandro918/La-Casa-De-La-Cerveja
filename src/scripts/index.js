@@ -162,7 +162,7 @@ function createLoadingSearch() {
 const cartButton = document.querySelector(".container__header--cart")
    cartButton.addEventListener('click', (e)=>{
      e.preventDefault()
-     window.location.href = "../../src/cart/index.html"
+     window.location.href = "../La-Casa-De-La-Cerveja/src/cart/index.html"
    })
  
  
