@@ -45,7 +45,7 @@ function criaTemplate(array) {
 const buttReturn = document.querySelector(".box__buttReturn")
   buttReturn.addEventListener('click', (e)=>{
     e.preventDefault()
-    window.location = "../index.html"
+    window.location = "index.html"
 
   })
 
