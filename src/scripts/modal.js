@@ -13,7 +13,6 @@ function createModalProduct(product) {
     let name =  document.createElement('h3')
     let description = document.createElement('p')
     let buttClose =  document.createElement('button')
-    let buttBuy =  document.createElement('button')
     let price =  document.createElement('p')
     let cite = document.createElement('cite')
     let sect = document.createElement('section')
@@ -23,7 +22,6 @@ function createModalProduct(product) {
     price.innerText = product.valor
     imgProduct.src = product.imagem
     buttClose.innerText = "X"
-    buttBuy.innerText = "Adicionar ao carrinho"
     
     div.classList.add("modal__container")
     divProduct.classList.add("modal__container--product")
@@ -32,12 +30,11 @@ function createModalProduct(product) {
     name.classList.add("modal__container--name")
     description.classList.add("modal__container--descripition")
     buttClose.classList.add("modal__container--close")
-    buttBuy.classList.add("modal__container--buy")
     price.classList.add("modal__container--price")
     sect.classList.add("modal__box")
     cite.classList.add("modal__box--footer")
 
-    cite.append(price, description, buttBuy)
+    cite.append(price, description)
     header.append(buttClose)
     sect.append(imgProduct, name)
     divProduct.append(sect, cite)
