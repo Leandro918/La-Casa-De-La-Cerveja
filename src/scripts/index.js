@@ -162,7 +162,7 @@ function createLoadingSearch() {
 const cartButton = document.querySelector(".container__header--cart")
    cartButton.addEventListener('click', (e)=>{
      e.preventDefault()
-     window.location.href = "../src/cart/cart.html"
+     window.location.href = "./src/cart/cart.html"
    })
  
  
